@@ -1,0 +1,20 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364673463.8775759:@value{	I"length:EFiËI"digest;
+F"%bc99b733aa807e57fd9845fc0b76559aI"source;
+FI"Ë$(function() {
+
+	// attach IP address information
+	$.ajax({
+		type: 'GET',
+		url: 'http://api.hostip.info/get_json.php'
+	}).done(function(response){
+		console.log(response);
+	});
+
+	$('.product-link').click(function() {
+		
+	});
+})
+;
+;
+FI"_version;
+F"%1a2948b280c0c44bb7cd9bc9ce0762cf

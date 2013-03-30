@@ -1,5 +1,5 @@
 <div class="product">
-  <h2><%= link_to product.name, product %></h2>
+  <h2><%= link_to product.name, product, :class => "product-link", 'data-product-id' => product.id %></h2>
   <div class="details">
     <%= number_to_currency(product.price) %> |
     Released <%= product.released_at.strftime("%B %e, %Y") %>

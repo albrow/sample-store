@@ -1,6 +1,6 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364671756.323734:@value{	I"length:EFiÍI"digest;
-F"%47761002d61adc36f9e3852ca15cbafbI"source;
-FI"Í/*!
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364673463.879711:@value{	I"length:EFiµ	I"digest;
+F"%153c93440d203c5692a01d43e3ec9f82I"source;
+FI"µ	/*!
  * jQuery JavaScript Library v1.7.1
  * http://jquery.com/
  *
@@ -9640,6 +9640,21 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
   });
 
 })( jQuery );
+$(function() {
+
+	// attach IP address information
+	$.ajax({
+		type: 'GET',
+		url: 'http://api.hostip.info/get_json.php'
+	}).done(function(response){
+		console.log(response);
+	});
+
+	$('.product-link').click(function() {
+		
+	});
+})
+;
 
   jQuery(function() {
     if ($('.pagination').length) {
@@ -9663,4 +9678,4 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 ;
 ;
 FI"_version;
-F"%c7cfe9bbb115005f2acace3d6c46df48
+F"%6692395c319099f5e7bc24771e0c951c
