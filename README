@@ -1,5 +1,9 @@
-RailsCasts Episode #114: Endless Page (revised)
+= RailsCasts Example Application
 
-http://railscasts.com/episodes/114-endless-page-revised
+Run these commands to try it out.
 
-Require Ruby 1.9.2 or later.
+  bundle
+  rake db:setup
+  rails s
+
+Requires Ruby 1.9.2 or higher.

@@ -1,0 +1,162 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364671755.69472:@value{	I"length:EFikI"digest;
+F"%a063bc279ec33b6d881ad1dc7b724722I"source;
+FI"k/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+/* line 8, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+body {
+  background-color: #4B7399;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+}
+
+/* line 14, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+a img {
+  border: none;
+}
+
+/* line 18, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+a {
+  color: #0000FF;
+}
+
+/* line 22, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+/* line 28, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+#container {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 20px 40px;
+  border: solid 1px black;
+  margin-top: 20px;
+}
+
+/* line 37, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+#flash_notice, #flash_error, #flash_alert {
+  padding: 5px 8px;
+  margin: 10px 0;
+}
+
+/* line 42, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+#flash_notice {
+  background-color: #CFC;
+  border: solid 1px #6C6;
+}
+
+/* line 47, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+#flash_error, #flash_alert {
+  background-color: #FCC;
+  border: solid 1px #C66;
+}
+
+/* line 52, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.fieldWithErrors {
+  display: inline;
+}
+
+/* line 56, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.error_messages {
+  width: 400px;
+  border: 2px solid #CF0000;
+  padding: 0px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+}
+
+/* line 66, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.error_messages h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+/* line 76, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.error_messages p {
+  margin: 8px 10px;
+}
+
+/* line 80, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.error_messages ul {
+  margin: 0;
+}
+
+/* line 84, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+form .field, form .actions {
+  margin: 12px 0;
+}
+
+/* line 88, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.product h2 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+/* line 93, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination {
+  background: white;
+  cursor: default;
+  margin-top: 20px;
+}
+/* line 97, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination a, .pagination span, .pagination em {
+  padding: 0.2em 0.5em;
+  display: block;
+  float: left;
+  margin-right: 1px;
+}
+/* line 103, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination .disabled {
+  color: #777;
+  border: solid 1px #CCC;
+}
+/* line 107, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination .current {
+  font-style: normal;
+  font-weight: bold;
+  background: #2e6ab1;
+  color: white;
+  border: 1px solid #2e6ab1;
+}
+/* line 114, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination a {
+  text-decoration: none;
+  color: #105cb6;
+  border: 1px solid #9aafe5;
+}
+/* line 118, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination a:hover, .pagination a:focus {
+  color: #000033;
+  border-color: #000033;
+}
+/* line 123, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination .page_info {
+  background: #2e6ab1;
+  color: white;
+  padding: 0.4em 0.6em;
+  width: 22em;
+  margin-bottom: 0.3em;
+  text-align: center;
+}
+/* line 130, /Users/Alex/Documents/Programming/Ruby/Rails/webapps/114-endless-page-revised/store-after/app/assets/stylesheets/application.css.scss */
+.pagination .page_info b {
+  color: #000033;
+  background: #6aa6ed;
+  padding: 0.1em 0.25em;
+}
+;
+FI"_version;
+F"%e41f70647defe317ce98fa2557bd1cbd

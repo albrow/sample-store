@@ -1,0 +1,19 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364671756.319432:@value{	I"length:EFi¦I"digest;
+F"%c20e0563ec494c465997756fff13e12dI"source;
+FI"¦
+  jQuery(function() {
+    if ($('.pagination').length) {
+      $(window).scroll(function() {
+        var url;
+        url = $('.pagination .next_page').attr('href');
+        if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+          $('.pagination').text("Fetching more products...");
+          return $.getScript(url);
+        }
+      });
+      return $(window).scroll();
+    }
+  });
+;
+FI"_version;
+F"%26663cc17d37768096ab04a307423c68
