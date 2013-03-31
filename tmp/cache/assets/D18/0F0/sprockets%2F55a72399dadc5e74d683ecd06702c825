@@ -1,20 +1,30 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364673463.8775759:@value{	I"length:EFiËI"digest;
-F"%bc99b733aa807e57fd9845fc0b76559aI"source;
-FI"Ë$(function() {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364703014.674319:@value{	I"length:EFi1I"digest;
+F"%17b4da4fd0d29290cc54ee8abe1f267dI"source;
+FI"1$(function() {
 
 	// attach IP address information
+	var ip_info;
 	$.ajax({
 		type: 'GET',
 		url: 'http://api.hostip.info/get_json.php'
-	}).done(function(response){
-		console.log(response);
+	}).done(function(ip_response){
+		ip_info = ip_response;
+		console.log(ip_info)
+		$.ajax({
+			type: 'POST',
+			url: 'http://localhost:3000/visitors/fetch', 
+			data: {visitor: ip_info}
+		}).done(function(visitor_response) {
+			console.log(visitor_response);
+		});
 	});
 
 	$('.product-link').click(function() {
-		
+		// TODO: send this action to the server asynchronously
+		// 		use the unique identifier we stored earlier
 	});
 })
 ;
 ;
 FI"_version;
-F"%1a2948b280c0c44bb7cd9bc9ce0762cf
+F"%ec5463be56ee39c483781cfebc3bff8d

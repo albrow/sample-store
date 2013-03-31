@@ -1,6 +1,8 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364673463.879711:@value{	I"length:EFiµ	I"digest;
-F"%153c93440d203c5692a01d43e3ec9f82I"source;
-FI"µ	/*!
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364703014.676141:@value{	I"length:EFiþ
+I"digest;
+F"%c652ed891733a9cab3c730032dba086eI"source;
+FI"þ
+/*!
  * jQuery JavaScript Library v1.7.1
  * http://jquery.com/
  *
@@ -9643,15 +9645,25 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 $(function() {
 
 	// attach IP address information
+	var ip_info;
 	$.ajax({
 		type: 'GET',
 		url: 'http://api.hostip.info/get_json.php'
-	}).done(function(response){
-		console.log(response);
+	}).done(function(ip_response){
+		ip_info = ip_response;
+		console.log(ip_info)
+		$.ajax({
+			type: 'POST',
+			url: 'http://localhost:3000/visitors/fetch', 
+			data: {visitor: ip_info}
+		}).done(function(visitor_response) {
+			console.log(visitor_response);
+		});
 	});
 
 	$('.product-link').click(function() {
-		
+		// TODO: send this action to the server asynchronously
+		// 		use the unique identifier we stored earlier
 	});
 })
 ;
@@ -9678,4 +9690,4 @@ $(function() {
 ;
 ;
 FI"_version;
-F"%6692395c319099f5e7bc24771e0c951c
+F"%bcf780b073c32cf0b9e4e00f0912cf61

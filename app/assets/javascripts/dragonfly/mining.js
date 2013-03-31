@@ -5,10 +5,16 @@ $(function() {
 	$.ajax({
 		type: 'GET',
 		url: 'http://api.hostip.info/get_json.php'
-	}).done(function(response){
-		ip_info = response;
-		// TODO: send the info to the server asynchronously
-		// TODO: store a cookie with a unique identifier for this user
+	}).done(function(ip_response){
+		ip_info = ip_response;
+		console.log(ip_info)
+		$.ajax({
+			type: 'POST',
+			url: 'http://localhost:3000/visitors/fetch', 
+			data: {visitor: ip_info}
+		}).done(function(visitor_response) {
+			console.log(visitor_response);
+		});
 	});
 
 	$('.product-link').click(function() {
