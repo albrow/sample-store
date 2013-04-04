@@ -1,9 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364672516.205065:@value{	I"length:EFi@I"digest;
-F"%6c9b09ecee957c36817c07191ef25501I"source;
-FI"@$(function() {
-	alert("this shit loaded this time!");
-})
-;
-;
-FI"_version;
-F"%f17073f7146cca659e6c45cab145f1ca

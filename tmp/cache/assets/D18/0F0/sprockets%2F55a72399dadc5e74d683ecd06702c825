@@ -1,30 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1364703014.674319:@value{	I"length:EFi1I"digest;
-F"%17b4da4fd0d29290cc54ee8abe1f267dI"source;
-FI"1$(function() {
-
-	// attach IP address information
-	var ip_info;
-	$.ajax({
-		type: 'GET',
-		url: 'http://api.hostip.info/get_json.php'
-	}).done(function(ip_response){
-		ip_info = ip_response;
-		console.log(ip_info)
-		$.ajax({
-			type: 'POST',
-			url: 'http://localhost:3000/visitors/fetch', 
-			data: {visitor: ip_info}
-		}).done(function(visitor_response) {
-			console.log(visitor_response);
-		});
-	});
-
-	$('.product-link').click(function() {
-		// TODO: send this action to the server asynchronously
-		// 		use the unique identifier we stored earlier
-	});
-})
-;
-;
-FI"_version;
-F"%ec5463be56ee39c483781cfebc3bff8d
