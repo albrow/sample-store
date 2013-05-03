@@ -6,7 +6,10 @@
     <%= javascript_include_tag "application" %>
     <% local = true %>
     <% source = local ? "http://localhost:3000/javascripts" : "https://d2b351nv4cudb7.cloudfront.net" %>
-    <script src="<%= source %>/sample-store.dev.js"></script>
+    <!-- 
+      disabling turnout scripts for the moment.
+      <script src="<%= source %>/sample-store.dev.js"></script>
+    -->
     <%= csrf_meta_tag %>
   </head>
   <body>
