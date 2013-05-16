@@ -1,13 +1,15 @@
+<% local = ENV['SAMPLE_STORE_JS_LOCAL'] %>
+<% local ||= true %>
+<% js_source = local ? "http://localhost:3000/client_javascripts" : "https://d2b351nv4cudb7.cloudfront.net" %>
+<% js_file_name = Rails.env.development? ? "sample-store.dev.js" : "sample-store.herokuapp.com.js" %>
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>Store</title>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application" %>
-    <% local = false %>
-    <% source = local ? "http://localhost:3000/javascripts" : "https://d2b351nv4cudb7.cloudfront.net" %>
-    <% name = Rails.env.development? ? "sample-store.dev.js" : "sample-store.herokuapp.com.js" %>
-    <script src="<%= source %>/<%= name %>"></script>
+    <script src="<%= js_source %>/<%= js_file_name %>"></script>
     <%= csrf_meta_tag %>
   </head>
   <body>
