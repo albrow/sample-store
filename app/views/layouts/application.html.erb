@@ -1,4 +1,6 @@
-<% use_local = eval ENV['SAMPLE_STORE_JS_LOCAL'] %>
+<% if ENV['SAMPLE_STORE_JS_LOCAL']
+  use_local = eval ENV['SAMPLE_STORE_JS_LOCAL'] 
+end %>
 <% use_local ||= false %>
 <% js_source = use_local ? "http://localhost:3000/client_javascripts" : "https://d2b351nv4cudb7.cloudfront.net" %>
 <% js_filename = Rails.env.development? ? "sample-store.dev.js" : "sample-store.herokuapp.com.js" %>
