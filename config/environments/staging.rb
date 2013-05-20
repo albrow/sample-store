@@ -62,5 +62,5 @@ Store::Application.configure do
   ## custom configuration
 
   # set javascript source for turnout
-  config.turnout_js_source = "http://cdn.turnoutbeta.com"
+  config.turnout_js_source = "https://s3.amazonaws.com/turnoutbeta-staging"
 end

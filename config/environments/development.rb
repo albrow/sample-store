@@ -27,4 +27,10 @@ Store::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+  ## custom configuration
+
+  # set javascript source for turnout
+  config.turnout_js_source = "https://s3.amazonaws.com/turnoutbeta-development"
 end
