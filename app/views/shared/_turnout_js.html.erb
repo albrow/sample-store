@@ -1,0 +1,16 @@
+<% 
+
+if ENV['SAMPLE_STORE_JS_LOCAL']
+  use_local = eval ENV['SAMPLE_STORE_JS_LOCAL'] 
+end
+use_local ||= false
+js_source = use_local ? "http://localhost:3000/client_javascripts" : Rails.configuration.turnout_js_source
+js_domain = Rails.env.development? ? "sample-store.dev" : "sample-store.herokuapp.com"
+
+%>
+
+<script>
+	document.write('<script src=' +
+	('__proto__' in {} ? '<%= js_source %>/<%= js_domain %>' : '<%= js_source %>/<%= js_domain %>-ie') +
+	'.js><\/script>')
+</script>
