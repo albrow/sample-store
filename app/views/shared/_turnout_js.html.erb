@@ -5,12 +5,7 @@ if ENV['SAMPLE_STORE_JS_LOCAL']
 end
 use_local ||= false
 js_source = use_local ? "http://localhost:3000/client_javascripts" : Rails.configuration.turnout_js_source
-js_domain = ""
-if Rails.env.development?
-	js_domain = ENV["turnout_site_token"] || "wi314p7bNi4KRovb54mfOQ"
-elsif Rails.env.production?
-	js_domain = ENV["turnout_site_token"] || "I8zvu8fKs3VOPnE3Ze6GEg"
-end
+js_domain = ENV["turnout_site_token"]
 %>
 
 <script>
